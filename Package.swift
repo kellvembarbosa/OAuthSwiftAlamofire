@@ -24,16 +24,16 @@ import PackageDescription
 
 let package = Package(
     name: "OAuthSwiftAlamofire",
-    platforms: [.macOS(.v10_12),
-                .iOS(.v10),
-                .tvOS(.v10),
-                .watchOS(.v3)],
+    platforms: [.macOS(.v13),
+                .iOS(.v13),
+                .tvOS(.v13),
+                .watchOS(.v9)],
     products: [
         .library(name: "OAuthSwiftAlamofire", targets: ["OAuthSwiftAlamofire"]),
     ],
     dependencies: [
         .package(url: "https://github.com/OAuthSwift/OAuthSwift.git", .upToNextMajor(from: "2.1.0")),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.8.1")),
     ],
     targets: [
         .target(name: "OAuthSwiftAlamofire", dependencies: ["OAuthSwift", "Alamofire"], path: "Sources"),
