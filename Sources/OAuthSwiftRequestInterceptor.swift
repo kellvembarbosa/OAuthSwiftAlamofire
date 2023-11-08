@@ -114,7 +114,7 @@ open class OAuthSwift2RequestInterceptor: OAuthSwiftRequestInterceptor {
 }
 
 extension OAuth1Swift {
-    open var requestInterceptor: OAuthSwiftRequestInterceptor {
+    public var requestInterceptor: OAuthSwiftRequestInterceptor {
         return OAuthSwiftRequestInterceptor(self)
     }
 
@@ -122,7 +122,7 @@ extension OAuth1Swift {
 
 extension OAuth2Swift {
 
-    open var requestInterceptor: OAuthSwift2RequestInterceptor {
+    public var requestInterceptor: OAuthSwift2RequestInterceptor {
         return OAuthSwift2RequestInterceptor(self)
     }
 
